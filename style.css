@@ -1,0 +1,108 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0c3fc, #8ec5fc); /* Light purple gradient */
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #b19cd9; /* Soft lavender */
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 1px 1px #d1c4e9;
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+section h2 {
+    color: #b19cd9; /* Soft lavender */
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #b19cd9;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+#contact img {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #b19cd9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills Section */
+#skills ul {
+    list-style-type: '✨';
+    padding-left: 20px;
+}
+
+/* Form */
+form {
+    background: #e0c3fc;
+    border: 2px solid #b19cd9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+form input, form textarea, form button {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #b19cd9;
+    border-radius: 5px;
+}
+
+form button {
+    background: #b19cd9;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #957dad;
+}
