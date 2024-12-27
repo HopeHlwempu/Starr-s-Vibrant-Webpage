@@ -1,38 +1,18 @@
-/* Root: Define CSS Variables for reusable values */
-:root {
-    --primary-color: #5a189a; /* Main color used for headings and accents */
-    --secondary-color: #6a0572; /* Secondary color for headings */
-    --background-color: #f5e1ff; /* Light gradient background color */
-    --text-color: #333; /* Default text color */
-    --link-color: #ffd700; /* Gold color for links */
-    --footer-background: #5a189a; /* Footer background color */
-    --container-max-width: 1200px; /* Maximum width of the content container */
-    --font-family-main: 'Georgia', 'Times New Roman', serif; /* Main font for the body */
-    --font-family-secondary: 'Arial', sans-serif; /* Secondary font for fallback */
-    --font-size-large: 3rem; /* Large font size for headings */
-    --font-size-medium: 2.5rem; /* Medium font size for section titles */
-    --font-size-small: 1.2rem; /* Small font size for list items */
-    --padding-large: 20px; /* Large padding for sections */
-    --padding-small: 10px; /* Small padding for individual elements */
-    --border-radius: 10px; /* Border radius for rounded corners */
-    --box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Box shadow for profile image */
-}
-
 /* General Reset */
 body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    font-family: var(--font-family-main); /* Use main font-family */
-    background: linear-gradient(135deg, var(--background-color), #c6a9f5); /* Background gradient from light purple to lavender */
-    color: var(--text-color); /* Default text color */
+    font-family: 'Georgia', 'Times New Roman', serif; /* Set a serif font family for readability */
+    background: linear-gradient(135deg, #f5e1ff, #c6a9f5); /* Background gradient from light purple to lavender */
+    color: #333; /* Default text color */
 }
 
-/* Container: Centers and restricts width */
+/* Container: Ensures content stays within a maximum width */
 .container {
     width: 90%; /* 90% of the viewport width */
-    max-width: var(--container-max-width); /* Maximum width of content */
+    max-width: 1200px; /* Maximum width set to 1200px */
     margin: auto; /* Centers the container horizontally */
-    padding: var(--padding-large); /* Adds large padding inside the container */
+    padding: 20px; /* Adds padding inside the container */
 }
 
 /* Header Section */
@@ -42,9 +22,9 @@ header {
 }
 
 header h1 {
-    font-size: var(--font-size-large); /* Large font size for the header */
-    margin-bottom: var(--padding-small); /* Adds small space below the header text */
-    color: var(--primary-color); /* Uses primary color for the header */
+    font-size: 3rem; /* Large font size for the header */
+    margin-bottom: 20px; /* Adds space below the header text */
+    color: #5a189a; /* Dark purple color for the header text */
 }
 
 /* Intro Section: Aligns the profile image and text */
@@ -52,20 +32,20 @@ header h1 {
     display: flex; /* Flexbox layout for aligning items horizontally */
     align-items: center; /* Vertically center the items */
     justify-content: center; /* Horizontally center the items */
-    gap: var(--padding-small); /* Adds space between the profile image and text */
+    gap: 20px; /* Adds space between the profile image and text */
 }
 
 .intro img.profile-image {
-    border-radius: var(--border-radius); /* Rounded corners for the profile image */
+    border-radius: 10px; /* Rounded corners for the profile image */
     width: 150px; /* Fixed width for the image */
     height: 150px; /* Fixed height for the image */
     object-fit: cover; /* Ensures the image covers the area without distortion */
-    box-shadow: var(--box-shadow); /* Adds a subtle shadow around the image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow around the image */
 }
 
 .intro p {
     max-width: 600px; /* Limits the width of the paragraph */
-    font-size: var(--font-size-small); /* Sets font size for paragraph */
+    font-size: 1.2rem; /* Slightly larger font size for readability */
     line-height: 1.8; /* Increases line height for better readability */
 }
 
@@ -76,9 +56,9 @@ header h1 {
 }
 
 .skills h2 {
-    font-size: var(--font-size-medium); /* Medium font size for the section title */
-    color: var(--secondary-color); /* Uses secondary color for the section title */
-    margin-bottom: var(--padding-small); /* Adds space below the section title */
+    font-size: 2.5rem; /* Large font size for the section title */
+    color: #6a0572; /* Purple color for the section title */
+    margin-bottom: 20px; /* Adds space below the section title */
 }
 
 .skills ul {
@@ -87,7 +67,7 @@ header h1 {
 }
 
 .skills ul li {
-    font-size: var(--font-size-small); /* Sets font size for list items */
+    font-size: 1.2rem; /* Sets font size for list items */
     margin: 10px 0; /* Adds vertical spacing between list items */
 }
 
@@ -95,15 +75,15 @@ header h1 {
 footer {
     text-align: center; /* Centers the content in the footer */
     margin-top: 50px; /* Adds space above the footer */
-    padding: var(--padding-large); /* Adds padding inside the footer */
-    background: var(--footer-background); /* Sets background color for the footer */
+    padding: 20px; /* Adds padding inside the footer */
+    background: #5a189a; /* Dark purple background color for the footer */
     color: #fff; /* White text color for the footer */
-    border-radius: var(--border-radius); /* Rounded corners for the footer */
+    border-radius: 10px; /* Rounded corners for the footer */
 }
 
 footer h2 {
-    font-size: var(--font-size-medium); /* Sets font size for footer heading */
-    margin-bottom: var(--padding-small); /* Adds space below the footer heading */
+    font-size: 2rem; /* Sets font size for footer heading */
+    margin-bottom: 20px; /* Adds space below the footer heading */
 }
 
 /* Contact Information Section in Footer */
@@ -118,10 +98,11 @@ footer h2 {
 }
 
 .contact-info a {
-    color: var(--link-color); /* Uses gold color for links */
+    color: #ffd700; /* Gold color for links */
     text-decoration: none; /* Removes underline from links */
 }
 
 .contact-info a:hover {
     text-decoration: underline; /* Adds underline when hovering over links */
 }
+
