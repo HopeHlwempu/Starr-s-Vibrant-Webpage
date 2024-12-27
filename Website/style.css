@@ -1,105 +1,93 @@
 /* General Reset */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Georgia', 'Times New Roman', serif;
-    background: linear-gradient(135deg, #f5e1ff, #c6a9f5);
-    color: #333;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Georgia', 'Times New Roman', serif; /* Set a serif font family for readability */
+    background: linear-gradient(135deg, #f5e1ff, #c6a9f5); /* Background gradient from light purple to lavender */
+    color: #333; /* Default text color */
 }
 
-/* Container */
+/* Container: Ensures content stays within a maximum width */
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    width: 90%; /* 90% of the viewport width */
+    max-width: 1200px; /* Maximum width set to 1200px */
+    margin: auto; /* Centers the container horizontally */
+    padding: 20px; /* Adds padding inside the container */
 }
 
 /* Header Section */
 header {
-    text-align: center;
-    margin-bottom: 50px;
+    text-align: center; /* Centers the header text */
+    margin-bottom: 50px; /* Adds space below the header */
 }
 
 header h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #5a189a;
+    font-size: 3rem; /* Large font size for the header */
+    margin-bottom: 20px; /* Adds space below the header text */
+    color: #5a189a; /* Dark purple color for the header text */
 }
 
+/* Intro Section: Aligns the profile image and text */
 .intro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    display: flex; /* Flexbox layout for aligning items horizontally */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+    gap: 20px; /* Adds space between the profile image and text */
 }
 
 .intro img.profile-image {
-    border-radius: 10px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Rounded corners for the profile image */
+    width: 150px; /* Fixed width for the image */
+    height: 150px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow around the image */
 }
 
 .intro p {
-    max-width: 600px;
-    font-size: 1.2rem;
-    line-height: 1.8;
+    max-width: 600px; /* Limits the width of the paragraph */
+    font-size: 1.2rem; /* Slightly larger font size for readability */
+    line-height: 1.8; /* Increases line height for better readability */
 }
 
 /* Skills Section */
 .skills {
-    text-align: center;
-    margin: 50px 0;
+    text-align: center; /* Centers the content in the skills section */
+    margin: 50px 0; /* Adds vertical margin above and below */
 }
 
 .skills h2 {
-    font-size: 2.5rem;
-    color: #6a0572;
-    margin-bottom: 20px;
+    font-size: 2.5rem; /* Large font size for the section title */
+    color: #6a0572; /* Purple color for the section title */
+    margin-bottom: 20px; /* Adds space below the section title */
 }
 
 .skills ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Removes default list bullets */
+    padding: 0; /* Removes padding */
 }
 
 .skills ul li {
-    font-size: 1.2rem;
-    margin: 10px 0;
+    font-size: 1.2rem; /* Sets font size for list items */
+    margin: 10px 0; /* Adds vertical spacing between list items */
 }
 
 /* Footer Section */
 footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    background: #5a189a;
-    color: #fff;
-    border-radius: 10px;
+    text-align: center; /* Centers the content in the footer */
+    margin-top: 50px; /* Adds space above the footer */
+    padding: 20px; /* Adds padding inside the footer */
+    background: #5a189a; /* Dark purple background color for the footer */
+    color: #fff; /* White text color for the footer */
+    border-radius: 10px; /* Rounded corners for the footer */
 }
 
 footer h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2rem; /* Sets font size for footer heading */
+    margin-bottom: 20px; /* Adds space below the footer heading */
 }
 
+/* Contact Information Section in Footer */
 .contact-info {
-    list-style: none;
-    padding: 0;
-    font-size: 1.1rem;
-}
-
-.contact-info li {
-    margin: 10px 0;
-}
-
-.contact-info a {
-    color: #ffd700;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
+    list-style: none; /* Removes default list bullets */
+    padding: 0; /* Removes padding */
+    font-size
