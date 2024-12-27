@@ -90,4 +90,19 @@ footer h2 {
 .contact-info {
     list-style: none; /* Removes default list bullets */
     padding: 0; /* Removes padding */
-    font-size
+    font-size: 1.1rem; /* Slightly larger font size for contact info */
+}
+
+.contact-info li {
+    margin: 10px 0; /* Adds space between each contact info item */
+}
+
+.contact-info a {
+    color: #ffd700; /* Gold color for links */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Adds underline when hovering over links */
+}
+
